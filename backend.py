@@ -5,7 +5,7 @@ from nba_api.stats.static import teams
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)  # Handle CORS issues
+CORS(app)
 
 @app.route('/api/teams', methods=['GET'])
 def get_teams():
